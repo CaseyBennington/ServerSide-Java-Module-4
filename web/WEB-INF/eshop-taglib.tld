@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+    <description>A taglib for eshop functions.</description>
+    <tlib-version>1.0</tlib-version>
+    <short-name>EShopFunctionTaglib</short-name>
+    <uri>EShopFunctionTagLibrary</uri>
+    
+    <function>
+        <description>Obtain the catalog categories</description>
+        <name>getCats</name>
+        <function-class>cart.EShop</function-class>
+        <function-signature>java.util.ArrayList getCats()</function-signature>
+    </function>    
+    
+    <function>
+        <description>Clear a list</description>
+        <name>clearList</name>
+        <function-class>cart.EShop</function-class>
+        <function-signature>void clearList(java.util.List)</function-signature>
+    </function>
+    
+    <function>
+        <description>Obtain the items in a category</description>
+        <name>getItems</name>
+        <function-class>cart.EShop</function-class>
+        <function-signature>java.util.ArrayList getItems(java.lang.String)</function-signature>
+    </function>
+
+    <function>
+        <description>Obtain an item given an sku</description>
+        <name>getItem</name>
+        <function-class>cart.EShop</function-class>
+        <function-signature>com.wrox.begjsp.ch03.Product getItem(java.lang.String)</function-signature>
+    </function>
+
+    <function>
+        <description>Add an item to a list</description>
+        <name>addList</name>
+        <function-class>cart.EShop</function-class>
+        <function-signature>void addList(java.util.List, java.lang.Object)</function-signature>
+    </function>
+    
+    <function>
+        <description>Remove an item to a list</description>
+        <name>removeFromList</name>
+        <function-class>cart.EShop</function-class>
+        <function-signature>void removeFromList(java.util.List, java.lang.Object)</function-signature>
+    </function>
+    
+    <function>
+        <description>Customers...load em up!</description>
+        <name>customerLoad</name>
+        <function-class>cart.Customers</function-class>
+        <function-signature>java.util.ArrayList getAllCustomers()</function-signature>
+    </function>
+
+    <function>
+        <description>get the current date</description>
+        <name>getCurrentDate</name>
+        <function-class>cart.EShop</function-class>
+        <function-signature>java.util.Date getCurrentDate()</function-signature>
+    </function> 
+ 
+</taglib>
